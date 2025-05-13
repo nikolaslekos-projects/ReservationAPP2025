@@ -195,6 +195,32 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMCwiaWF0IjoxNzQ3MTQxNDczLCJleHAiOjE3NDcxNDUwNzN9.xb1pz5uex7Xi0pjtsWQpYDK5npUvOQ_39RBKl7VvUSo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/restaurants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"restaurants"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
