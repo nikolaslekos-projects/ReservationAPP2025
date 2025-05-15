@@ -1,30 +1,26 @@
-Αυτή η εφαρμογή αποτελείται από Backend (Node.js/Express) και Frontend (React), καθώς και βάση δεδομένων σε MariaDB (μέσω HeidiSQL).
+This application consists of a Backend (Node.js/Express), a Frontend (React), and a MariaDB database (managed via HeidiSQL).
 
- Απαραίτητες Προϋποθέσεις
-Node.js & npm εγκατεστημένα
+Prerequisites
+Node.js and npm must be installed
+HeidiSQL or any MariaDB client must be available
 
-HeidiSQL ή MariaDB client
+Backend Installation and Startup
+Navigate to the backend folder
+Run npm install to install dependencies
+Run npm run dev to start the development server
 
- Εγκατάσταση και Εκκίνηση Backend
-cd backend
-npm install
-npm run dev
+Frontend Installation and Startup
+Navigate to the frontend folder
+Run npm install to install dependencies
+Run npm start to launch the frontend
 
+Database Import (via HeidiSQL)
+Open HeidiSQL
+Create a new database, for example: restaurant_booking
+Import the file: restaurant_booking.sql
+Set the database credentials in the backend/.env file (user, password, database name)
 
-Εγκατάσταση και Εκκίνηση Frontend
-cd frontend
-npm install
-npm start
-
-Εισαγωγή Βάσης Δεδομένων (HeidiSQL)
-Άνοιξε το HeidiSQL.
-Δημιούργησε μία νέα βάση δεδομένων π.χ. restaurant_booking.
-Κάνε Import το αρχείο: restaurant_booking.sql
-Ρύθμισε τα DB credentials στο backend/.env αρχείο (user, password, db).
-
-Επισκέψου: http://localhost:3000
-
-Κάνε εγγραφή / σύνδεση.
-
-Δες εστιατόρια, κάνε κρατήσεις, επεξεργασία, διαγραφή.
+Visit http://localhost:3000
+Register or log in
+Browse restaurants, make reservations, edit or delete them
 
